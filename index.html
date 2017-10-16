@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>A1-Biryani:-A full stop for foodies</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="menuSection.css" type="text/css">
+  <style>
+  body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }  
+  .jumbotron {
+      background-color: #47c535;
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+  }
+  #logo-image{
+      animation-name: logo-image;
+      -webkit-animation-name: logo-image;
+      animation-duration: 2s;
+      -webkit-animation-duration: 2s;
+      visibility: visible;
+  }
+  @keyframes logo-image {
+    0% {
+      opacity: 0;
+      transform: translateX(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+  @-webkit-keyframes logo-image {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0%);
+    }
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .logo-small {
+      color: #47c535;
+      font-size: 50px;
+  }
+    
+      #logo:hover{
+          color: #353535;
+      }
+  .logo {
+      color: #8bc34a;
+      font-size: 200px;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #47c535;
+  }
+  .carousel-indicators li {
+      border-color: #8bc34a;
+      
+  }
+  .carousel-indicators li.active {
+      background-color:#8bc34a;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .panel {
+      border: 1px solid #f4511e; 
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #f4511e;
+      background-color: #fff !important;
+      color: #f4511e;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #f4511e !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #f4511e;
+      color: #fff;
+  }
+  .navbar {
+      margin-bottom: 0;
+      background-color: #409811;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #8bc34a !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #8bc34a;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        color: #8bc34a;
+        font-size: 150px;
+    }
+  }
+
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage"><strong id="logo">A-One Biryani</strong></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+         <li><a href="#pricing">MENU</a></li>
+          <li><a href="#services">SERVICES</a></li>
+          <li><a href="#portfolio">BRANCHES</a></li>
+          <li><a href="#about">ABOUT</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+    <img src="logo.png" id="logo-image">
+  <h1>A-One Biryani</h1> 
+  <p>We specialize in Hyderabadi Dum ki Biryani</p> 
+
+</div>
+<!-- Container (Pricing Section) -->
+<div id="pricing" class="container-fluid">
+  <div class="text-center">
+    <h2 id="sub-heading">Menu</h2>
+    <h3>Our Featured Dishes</h3>
+    <h4>Choose a dish to satisfy your appetite</h4>
+  </div>
+  <div class="container-fluid" id="carousel">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators for menu slides -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active" id="menu-indicators"></li>
+                <li data-target="#myCarousel" data-slide-to="1" id="menu-indicators"></li>
+                <li data-target="#myCarousel" data-slide-to="2" id="menu-indicators"></li>
+            </ol>
+
+  <!-- Wrapper for menu slides  -->
+            <div class="carousel-inner">
+                <!-- First Slide of carousel--->
+                <div class="item active">
+                <div class="container" id="menu-container">
+                <div class="row">
+                <ul>
+                    <li class="col-sm-4 ">
+                        <div id="li">
+                        <div class="image ">
+                            <img src="menu/m1.jpg" alt="Manchuria" id="menu-img">
+                            <span class="span"><h1 class="p">Chicken Manchuria</h1></span>
+                        </div>
+                        <h1 id="price"><i class="fa fa-inr" ></i>170 RS</h1>
+                        </div>
+                    </li>
+                    <li class="col-sm-4">
+                        <div id="li">
+                        
+                        <div class="image ">
+                            <img src="menu/m2.jpg" alt="Noodles" id="menu-img">
+                            <span class="span"><h1 class="p"><strong>Noodles</strong></p></span>
+                        </div>
+                        <h1 id="price"><i class="fa fa-inr" ></i>120 RS</h1>
+                        </div>
+                    </li>
+                    <li class="col-sm-4" >
+                        <div id="li">
+                        <div class="image ">
+                            <img src="menu/m3.jpg" alt="Fried Rice" id="menu-img">
+                            <span class="span"><h1 class="p">Fride Rice</p></span>
+                        </div>
+                        <h1 id="price"><i class="fa fa-inr" ></i>120 RS</h1>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <div class="container" id="menu-container">
+            <div class="row">
+                <ul>
+                    <li class="col-sm-4" >
+                        <div id="li">
+                        <div class="image " >
+                            <img src="menu/m4.jpg" alt="Palak Paneer" id="menu-img">
+                            <span class="span"><h1 class="p">Palak Paneer</h1></span>
+                        </div>
+                        <h1 id="price"><i class="fa fa-inr" ></i>130 RS</h1>
+                        </div>
+                    </li>
+                    <li class="col-sm-4" >
+                        <div id="li">
+                        <div class="image ">
+                            <img src="menu/m5.jpg" alt="Egg Curry" id="menu-img">
+                            <span class="span"><h1 class="p">Egg Curry</h1></span>
+                        </div>
+                        <h1 id="price"><i class="fa fa-inr" ></i>100 RS</h1>
+                        </div>
+                    </li>
+                    <li class="col-sm-4" >
+                        <div id="li">
+                        <div class="image ">
+                            <img src="menu/m6.jpg" alt="chicken Curry" id="menu-img">
+                            <span class="span"><h1 class="p">Butter Chicken </h1></span>
+                        </div>
+                        <h1 id="price"><i class="fa fa-inr" ></i>190 RS</h1>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            </div>
+                    
+                </div>
+                <!--second slide of carousel-->
+                <div class="item">
+                                <div class="container" id="menu-container">
+                <div class="row">
+                <ul>
+                    <li class="col-sm-4 ">
+                        <div id="li">
+                        <div class="image ">
+                            <img src="menu/m7.jpg" alt="Chicken 65" id="menu-img">
+                            <span class="span"><h1 class="p">Chicken 65</h1></span>
+                        </div>
+                        <h1 id="price"><i class="fa fa-inr" ></i>200 RS</h1>
+                        </div>
+                    </li>
+                    <li class="col-sm-4">
+                        <div id="li">
+                        
+                        <div class="image ">
+                            <img src="menu/m8.jpg" alt="Chicken Tikka" id="menu-img">
+                            <span class="span"><h1 class="p"><strong>Chicken Tikka</strong></h1></span>
+                        </div>
+                        <h1 id="price"><i class="fa fa-inr" ></i>190 RS</h1>
+                        </div>
+                    </li>
+                    <li class="col-sm-4" >
+                        <div id="li">
+                        <div class="image ">
+                            <img src="menu/m9.jpg" alt="Nahari" id="menu-img">
+                            <span class="span"><h1 class="p">Nahari Soup</h1></span>
+                        </div>
+                        <h1 id="price"><i class="fa fa-inr" ></i>120 RS</h1>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <div class="container" id="menu-container">
+            <div class="row">
+                <ul>
+                    <li class="col-sm-4" >
+                        <div id="li">
+                        <div class="image " >
+                            <img src="menu/m10.jpg" alt="chicken Biryani" id="menu-img">
+                            <span class="span"><h1 class="p">Chicken Biryani</h1></span>
+                        </div>
+                        <h1 id="price"><i class="fa fa-inr" ></i>220 RS</h1>
+                        </div>
+                    </li>
+                    <li class="col-sm-4" >
+                        <div id="li">
+                        <div class="image ">
+                            <img src="menu/m11.jpg" alt="Chicken Tandoori" id="menu-img">
+                            <span class="span"><h1 class="p">Chicken Tandoori</h1></span>
+                        </div>
+                        <h1 id="price"><i class="fa fa-inr" ></i>140 RS</h1>
+                        </div>
+                    </li>
+                    <li class="col-sm-4" >
+                        <div id="li">
+                        <div class="image ">
+                            <img src="menu/m12.jpg" alt="Ginger Fish" id="menu-img">
+                            <span class="span"><h1 class="p">Ginger Fish</h1></span>
+                        </div>
+                        <h1 id="price"><i class="fa fa-inr" ></i>200 RS</h1>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            </div>
+                </div>
+                <!--Third slide of Carousel-->
+                <div class="item">
+                                <div class="container" id="menu-container">
+                <div class="row">
+                <ul>
+                    <li class="col-sm-4 ">
+                        <div id="li">
+                        <div class="image ">
+                            <img src="menu/m13.jpg" alt="Prawn Fry" id="menu-img">
+                            <span class="span"><h1 class="p">Prawn Fry</h1></span>
+                        </div>
+                        <h1 id="price"><i class="fa fa-inr" ></i>200 RS</h1>
+                        </div>
+                    </li>
+                    <li class="col-sm-4">
+                        <div id="li">
+                        
+                        <div class="image ">
+                            <img src="menu/14.jpg" alt="Butter Naan" id="menu-img">
+                            <span class="span"><h1 class="p"><strong>Butter Naan</strong></h1></span>
+                        </div>
+                        <h1 id="price"><i class="fa fa-inr" ></i>30 RS</h1>
+                        </div>
+                    </li>
+                    <li class="col-sm-4" >
+                        <div id="li">
+                        <div class="image ">
+                            <img src="menu/m15.jpg" alt="Curd Rice" id="menu-img">
+                            <span class="span"><h1 class="p">Curd Rice</h1></span>
+                        </div>
+                        <h1 id="price"><i class="fa fa-inr" ></i>80 RS</h1>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <div class="container" id="menu-container">
+            <div class="row">
+                <ul>
+                    <li class="col-sm-4" >
+                        <div id="li">
+                        <div class="image " >
+                            <img src="menu/16.jpg" alt="Daal Fry" id="menu-img">
+                            <span class="span"><h1 class="p">Daal Fry</h1></span>
+                        </div>
+                        <h1 id="price"><i class="fa fa-inr" ></i>80 RS</h1>
+                        </div>
+                    </li>
+                    <li class="col-sm-4" >
+                        <div id="li">
+                        <div class="image ">
+                            <img src="menu/17.jpg" alt="Veg Meal" id="menu-img">
+                            <span class="span"><h1 class="p">South Veg Meal</h1></span>
+                        </div>
+                        <h1 id="price"><i class="fa fa-inr" ></i>180 RS</h1>
+                        </div>
+                    </li>
+                    <li class="col-sm-4" >
+                        <div id="li">
+                        <div class="image ">
+                            <img src="menu/18.jpg" alt="Mutton Achar" id="menu-img">
+                            <span class="span"><h1 class="p">Mutton Achaar</h1></span>
+                        </div>
+                        <h1 id="price"><i class="fa fa-inr" ></i>200 RS</h1>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            </div>
+                </div>
+            </div>
+
+  <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+      
+</div>
+</div>
+
+
+
+
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+  <h2 id="sub-heading">SERVICES</h2>
+  <h4>What we offer</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span ><img src="menu/swiggy.png" alt=" Swiggy" style="width: 20%;"></span>
+      <h4>SWIGGY</h4>
+      <p>We are on Swiggy</p>
+    </div>
+    <div class="col-sm-4">
+      <span><img src="menu/zomato.png" alt=" Zomato"style="width: 20%"></span>
+      <h4>ZOMATO</h4>
+      <p>We are on Zomato</p>
+    </div>
+    <div class="col-sm-4">
+      <span><img src="menu/home-delivery.png" alt="Home Delivery" style="width: 20%"></span>
+      <h4>HOME DELIVERY</h4>
+      <p>We provide home deliveries</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span><img src="menu/party.png" alt="Party orders" width="20%"></span>
+      <h4>PARTY ORDERS</h4>
+      <p>We Undertake all Party Orders</p>
+    </div>
+    <div class="col-sm-4">
+      <span ><img src="menu/staff.jpg" alt="Staff" style="width:20%"></span>
+      <h4>STAFF</h4>
+      <p>We serve with our best staff</p>
+    </div>
+    <div class="col-sm-4">
+      <span><img src="menu/happiness.png" alt="Customers Happiness" style="width: 20%"></span>
+      <h4 style="color:#303030;">HAPPINESS</h4>
+      <p>We believe in Customers happiness</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  <h2 id="sub-heading">What our customers say</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+        <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"This Hotel is the best. I am so happy with the Food and Service!"<br><span>Rajesh Mohan, Technical Student.</span></h4>
+      </div>
+      <div class="item">
+        <h4>"One word... WOW!!"<br><span>John Doe, Salesman.</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Good food in afordable prices" what more i need?<br><span>Suleman Shaik, Employee</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls 
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>-->
+  </div>
+  <h2 id="sub-heading">Our Branches</h2><br>
+  <h4>Where you can find us.</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="paris.jpg" alt="A-one Bawarchi" width="400" height="300">
+        <p><strong>Hyderabad</strong></p>
+        <p>We have a branch in Bulgempet<br><span><b>A-One Bawarchi Restaurant</b></span></p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="newyork.jpg" alt="A-one Paradise" width="400" height="300">
+        <p><strong>Hyderabad</strong></p>
+        <p>We have a branch in punjagutta<br><span><b>A-one Paradise Restaurant</b></span></p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="sanfran.jpg" alt="A-one Bawarchi" width="400" height="300">
+        <p><strong>Pune</strong></p>
+        <p>We have our branch in pune<br><span><b>A-one Bawarchi Restaurant</b></span></p>
+      </div>
+    </div>
+  </div><br>
+  
+
+</div>
+    <!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12">
+      <h2 id="sub-heading">About Us</h2><br>
+        <div class="col-sm-8">
+            <h2 class="about-header">Where it all started</h2><br>
+            <p style="font-size: 17px; font-family:Palatino Linotype;">We started with zero and now we are one of the leading brand of hotels in Hyderabad successfully serving since 2005.</p>
+            <p style="font-size: 17px; font-family:Palatino Linotype;">We have expanded throughout these years with three branches in Hyderabad, one in Pune and one in Karnataka. </p>
+            <p style="font-size: 17px; font-family:Palatino Linotype;">Though we may have different names but we can assure you that the service provided to you will be same in any branch.</p>
+      
+        </div>
+    
+        <div class="col-sm-4" style="align-content: center;">
+            <span ><img class="slideanim" src="menu/hotel.png" alt="hotel" style=""></span>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center" id="sub-heading">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5" >
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Hyderabad, India</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +91 8686129149</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> support@a1biryani.com</p>
+    </div>
+    <div class="col-sm-7 slideanim" id="contact-error">
+    <form action="mail.php" method="post" class="contact">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="username" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="textarea" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+        </form>
+    </div>
+  </div>
+</div>
+
+<!-- Add Google Maps -->
+<div id="googleMap" style="height:400px;width:100%;"></div>
+<script>
+function myMap() {
+var myCenter = new google.maps.LatLng(17.448793, 78.449900);
+var mapProp = {center:myCenter, zoom:17, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var marker = new google.maps.Marker({position:myCenter,animation: google.maps.Animation.BOUNCE});
+marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC84Q6Us9b5iyCTzE1xEgHfN-LbIs3Zddo&callback=myMap"></script>
+<!--
+To use map code, get a free API key from Google.
+-->
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>&copy; 2017 Designed By <a  data-toggle="popover" title="Contact" data-content="You can E-mail me at syedparvez72@hotmail.com">Syed Parvez</p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+});
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover(); 
+});
+    </script>
+    <script type="text/javascript">
+
+        $('.contact').on('submit', function(e){
+    e.preventDefault();
+    var dataIn = $(this).serialize(); //serialize turns the form data into a string that can be passed to mail.php. Try doing alert(dataIn); to see what it holds.
+
+ 
+        $.post( "mail.php", dataIn )
+        .done(function( dataOut )
+        {
+    
+        //dataOut holds the response from mail.php. The response would be any html mail.php outputs. I typically echo out json encoded arrays as responses that you can parse here in the jQuery.
+        var myArray = JSON.parse(dataOut );
+        if(myArray=="true"){
+            $("#contact-error").html("<div style='text-align:center;'><h4 style='font-size:20px'>Thank you for contacting us<br><span>We will get back to you as soon as we can</h4></div>")
+            
+        }
+        else {
+            $("#contact-error").html("<div style='text-align:center;'><h4 style='font-size:20px'>Thank you for contacting us<br><span>We will get back to you as soon as we can</h4></div>")
+             }
+ });
+
+ return false; //Make sure you do this or it will submit the form and redirect
+  
+}); 
+
+</script>
+
+</body>
+</html>
